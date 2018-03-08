@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background: #c0392b;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Chau Philomene One', sans-serif;
+    margin: 25px auto;
+}
+
+.container {
+     background-color: white;
+     margin: 25px auto;
+     border-radius: 10px;
+}
+
+.btn {
+    margin: 15px;
+}

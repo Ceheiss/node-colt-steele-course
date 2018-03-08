@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<h1>Make changes to <%=pokemon.name%></h1>
+
+<form action="/pokemons/<%=pokemon._id%>?_method=PUT" method="POST">
+    <label>Pokemon Name</label>
+    <div><input type="text" name="pokemon[name]" value="<%=pokemon.name%>"></div>
+    <label>Pokemon Type</label>
+    <div><input type="text" name="pokemon[type]" value="<%=pokemon.type%>"></div>
+    <label>Pokemon Number</label>
+    <div><input type="text" name="pokemon[index]" value="<%=pokemon.index%>"></div>
+    <label>Pokemon Picture</label>
+    <div><input type="text" name="pokemon[picture]" value="<%=pokemon.picture%>"></div>
+    <label>Pokemon description</label>
+    <div><textarea name="pokemon[description]"><%=pokemon.description%></textarea></div>
+    <button class="btn btn-lg btn-warning">Edit <%=pokemon.name%>!</button>
+</form>
+
+<% include partials/footer %>

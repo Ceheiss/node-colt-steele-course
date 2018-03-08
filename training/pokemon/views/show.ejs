@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<h1><%=pokemon.name%></h1>
+ 
+    <div><img src="<%=pokemon.picture%>"></div>
+    <div><em><h3><%=pokemon.type%></h3></em></div>
+    <div><p>Index: <%=pokemon.index%></p></div>
+    <div><strong>About <%=pokemon.name%>: </strong> <%=pokemon.description%></div>
+
+    <a href="/pokemons/">Back to the Pokedex | </a>
+    <div><a href="/pokemons/<%=pokemon._id%>/edit" class="btn btn-info">Edit this Pokemon Entry</a></div>
+    
+    <form action="/pokemons/<%=pokemon._id%>?_method=DELETE" method="POST">
+      <button class="btn btn-lg btn-danger">Delete Pokemon</button>
+    </form>
+    
+<% include partials/footer %>

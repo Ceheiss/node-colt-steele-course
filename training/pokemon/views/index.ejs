@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<h1>Pokedex: List of known pokemon</h1>
+
+<% pokemons.forEach(function(pokemon){ %>
+    <div><img src= "<%=pokemon.picture%>"></div>
+    <div><h2><%=pokemon.name%></h2></div>
+    <div><em><h3><%=pokemon.type%></h3></em></div>
+    <div><p>Index: <%=pokemon.index%></p></div>
+    <a href="/pokemons/<%=pokemon._id%>">Learn More</a>
+    <hr>
+<% }) %>
+
+<div><a href="/pokemons/new"><button class="btn btn-lg btn-warning">Add a New Pokemon!</button></a></div>
+
+<% include partials/footer %>

@@ -1,0 +1,7 @@
+<h1>List of todos</h1>
+
+<% todos.forEach(function (todo){ %>
+    <h2><%= todo.title %></h2>
+    <p><%= todo.body %></p>
+    <a href="/todos/<%=todo._id%>">Read More</a>
+<% }); %>

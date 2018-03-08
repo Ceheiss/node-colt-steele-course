@@ -1,0 +1,7 @@
+<h1><%=todo.title%></h1>
+<p><%=todo.body%></p>
+<a href="/">Back Home</a>
+<button><a href="/todos/<%=todo._id%>/edit">Edit the post</a></button>
+<form method="POST" action="/todos/<%=todo._id%>?_method=DELETE">
+    <button style="color: white; background-color: red">Delete Blog</button>
+</form>

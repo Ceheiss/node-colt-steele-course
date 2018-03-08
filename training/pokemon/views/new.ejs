@@ -1,0 +1,18 @@
+<% include partials/header %>
+
+<h1>Add a new Pokemon!</h1>
+<form action="/pokemons" method="POST">
+    <label>Pokemon Name</label>
+    <div><input type="text" name="pokemon[name]"></div>
+    <label>Pokemon Type</label>
+    <div><input type="text" name="pokemon[type]"></div>
+    <label>Pokemon Number</label>
+    <div><input type="text" name="pokemon[index]"></div>
+    <label>Pokemon Picture</label>
+    <div><input type="text" name="pokemon[picture]"></div>
+    <label>Pokemon description</label>
+    <div><textarea name="pokemon[description]"></textarea></div>
+    <button class="btn btn-lg btn-success">Add the Pokemon!</button>
+</form>
+
+<% include partials/footer %>

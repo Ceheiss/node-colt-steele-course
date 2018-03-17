@@ -1,0 +1,13 @@
+<h1>Welcome to the Dog App Index Page</h1>
+
+<% dogs.forEach(function(dog){ %>
+    <div class = "name">
+        <h2><%= dog.name %></h2>
+    </div>
+    <div class = "image">
+        <img src="<%= dog.image%>">
+    </div>
+    <a href="/dogs/<%= dog._id%>">Learn more about <strong><%= dog.name%></strong></a>
+<% }) %>
+
+<p><button><a href="/dogs/new">Do you have a dog? Add him</a></button></p>

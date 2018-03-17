@@ -1,0 +1,15 @@
+<h1><%= dog.name %></h1>
+<img src="<%= dog.image %>">
+<p><strong>breed:</strong> <%= dog.breed%></p>
+<p><strong>age:</strong> <%= dog.age %></p>
+<p><strong>Contact <%= dog.name%>'s owner at:</strong> <em><%= dog.contact%></em></p>
+
+<div>
+   <form action="/dogs/<%= dog._id%>?_method=DELETE" method="POST">
+    <button style="background-color: red; color: white" type="submit">Delete</button>
+   </form> 
+</div>
+
+
+<a href="/dogs/<%= dog._id%>/edit">Edit the information</a>
+<p><a href="/dogs">Back to the main page</a></p>

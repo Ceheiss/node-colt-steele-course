@@ -57,11 +57,11 @@ Pokemon.create({
 
 // Create
 app.post("/pokemons", function(req, res){
-    var formData= req.body.pokemon;
+    var formData = req.body.pokemon;
     Pokemon.create(formData, function(err, newPokemon){
         console.log(newPokemon);
         if(err){
-            res.render("New");
+            res.render("new");
         } else {
             res.redirect("/pokemons");
         }

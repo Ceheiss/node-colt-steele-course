@@ -1,0 +1,15 @@
+<h1>Make changes to <%= dog.name%>'s information</h1>
+
+<form action="/dogs/<%=dog._id%>?_method=PUT" method="POST">
+    <p><label>Dog Name</label></p>
+    <p></p><input type="text" value="<%=dog.name%>" name="dog[name]"></p>
+    <p><label>Breed</label></p>
+    <p></p><input type="text" value="<%=dog.breed%>" name="dog[breed]"></p>
+    <p><label>Age</label></p>
+    <p><input type="number" value="<%=dog.age%>" name="dog[age]"></p>
+    <p><label>image</label></p>
+    <p><input type="text" value="<%=dog.image%>" name="dog[image]"></p>
+    <p><label>Contact e-mail</label></p>
+    <p><input type="email" value="<%=dog.contact%>" name="dog[contact]"></p>
+    <p><button>Submit</button></p>
+</form>
